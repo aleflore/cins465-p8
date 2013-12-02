@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="span9">
+    <%= image_tag(@profile.picture_url, :width => "100%") if @profile.picture.present? %>
+  </div>
+
+  <div class="span3">
+    <p><b>Name: </b><%= @profile.name %></p>
+    <p><b>Description: </b><%= @profile.description %></p>
+    <p>
+      <%= link_to 'Edit', edit_profile_path(@profile) %> |
+      <%= link_to 'Destroy', @profile, confirm: 'Are you sure?', method: :delete %> |
+      <%= link_to 'Back', profiles_path %>
+    </p>
+  </div>
+  <h3>Commenting</h3>
+  <table>
+  <tr>
+    <th>Comment<th>
+  </tr>
+  <% @profile.comments.each do |comment| %>
+    <tr>
+      <td><%= profile.comment %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to 'All Profiles', root_path %></p>
+<p><%= link_to 'New Comment', new_profile_comment_path(@profile) %></p>
+</div>
