@@ -1,4 +1,8 @@
 <h1>Listing comments</h1>
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 
 <table>
   <thead>
@@ -17,7 +21,7 @@
       <tr>
         <td><%= comment.user_name %></td>
         <td><%= comment.body %></td>
-        <td><%= comment.profile_id %></td>
+        <td><%= comment.idea_id %></td>
         <td><%= link_to 'Show', comment %></td>
         <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
         <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,7 +29,31 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>User name</th>
+      <th>Body</th>
+      <th>Profile</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
-<%= link_to 'New Comment', new_comment_path %>
+  <tbody>
+    <% @comments.each do |comment| %>
+      <tr>
+        <td><%= comment.user_name %></td>
+        <td><%= comment.body %></td>
+        <td><%= comment.idea_id %></td>
+        <td><%= link_to 'Show', comment %></td>
+</tr>
+    <% end %>
+  </tbody>
+</table>

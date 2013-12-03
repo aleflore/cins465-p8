@@ -10,7 +10,7 @@ class HomeController < ApplicationController
 
     # call the system utility whois (must install first (see above))
     # pass the query_text enter on last page to whois
-    @result = `gng' #{@query_text}`.split("\n")
+    @result = `whois #{@query_text}`.split("\n")
     # rails will now display the app/views/home/query.html.erb
     # is does this because the controller is named query
     # the @result can be used in the query.html.erb

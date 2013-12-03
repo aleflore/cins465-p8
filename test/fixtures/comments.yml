@@ -3,9 +3,9 @@
 one:
   user_name: MyString
   body: MyText
-  profile_id: 1
+  idea_id: 1
 
 two:
   user_name: MyString
   body: MyText
-  profile_id: 1
+  idea_id: 1

@@ -11,26 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131202185827) do
+ActiveRecord::Schema.define(version: 20131203165535) do
 
   create_table "comments", force: true do |t|
     t.string   "user_name"
     t.text     "body"
-    t.integer  "profile_id"
+    t.integer  "idea_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "profiles", force: true do |t|
+  create_table "ideas", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "picture"
-    t.string   "profile_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "profiles", ["profile_id"], name: "index_profiles_on_profile_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

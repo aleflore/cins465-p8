@@ -1,0 +1,8 @@
+<%= link_to "Search Page", query_path %>
+
+<p><%= "$ Search for #{@query_text} returned" %></p>
+<br>
+<% @result.each do |line| %>
+  <%= line %>
+  <br>
+<% end %>

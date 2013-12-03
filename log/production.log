@@ -1,0 +1,261 @@
+I, [2013-12-02T17:05:29.786351 #31827]  INFO -- : Started GET "/" for 132.241.44.11 at 2013-12-02 17:05:29 -0800
+I, [2013-12-02T17:05:29.791249 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T17:05:29.796054 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.7ms)
+I, [2013-12-02T17:05:29.802161 #31827]  INFO -- : Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T20:54:11.664852 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 20:54:11 -0800
+I, [2013-12-02T20:54:11.671128 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T20:54:11.676954 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.7ms)
+I, [2013-12-02T20:54:11.687208 #31827]  INFO -- : Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 1.0ms)
+I, [2013-12-02T21:12:15.385351 #31827]  INFO -- : Started GET "/" for 132.241.73.14 at 2013-12-02 21:12:15 -0800
+I, [2013-12-02T21:12:15.391725 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:12:15.397042 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.8ms)
+I, [2013-12-02T21:12:15.403424 #31827]  INFO -- : Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:12:22.302823 #31827]  INFO -- : Started GET "/profiles" for 132.241.73.14 at 2013-12-02 21:12:22 -0800
+I, [2013-12-02T21:12:22.305359 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:12:22.308491 #31827]  INFO -- : Completed 401 Unauthorized in 3ms
+I, [2013-12-02T21:12:22.404085 #31827]  INFO -- : Started GET "/users/sign_in" for 132.241.73.14 at 2013-12-02 21:12:22 -0800
+I, [2013-12-02T21:12:22.406308 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:12:22.420954 #31827]  INFO -- :   Rendered devise/shared/_links.erb (1.1ms)
+I, [2013-12-02T21:12:22.421257 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+I, [2013-12-02T21:12:22.426065 #31827]  INFO -- : Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:12:25.359218 #31827]  INFO -- : Started GET "/users/sign_up" for 132.241.73.14 at 2013-12-02 21:12:25 -0800
+I, [2013-12-02T21:12:25.364740 #31827]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-02T21:12:25.478952 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.9ms)
+I, [2013-12-02T21:12:25.479313 #31827]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (104.4ms)
+I, [2013-12-02T21:12:25.483154 #31827]  INFO -- : Completed 200 OK in 118ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:12:31.623760 #31827]  INFO -- : Started POST "/users" for 132.241.73.14 at 2013-12-02 21:12:31 -0800
+I, [2013-12-02T21:12:31.630069 #31827]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-02T21:12:31.630154 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"4peNf03sFbrpMu65r1Wri9W3aLzdn0a2oyV8Zeyu1zY=", "user"=>{"email"=>"ff@cc.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+E, [2013-12-02T21:12:31.816315 #31827] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+E, [2013-12-02T21:12:31.833572 #31827] ERROR -- : Binary data inserted for `string` type on column `last_sign_in_ip`
+E, [2013-12-02T21:12:31.833643 #31827] ERROR -- : Binary data inserted for `string` type on column `current_sign_in_ip`
+I, [2013-12-02T21:12:31.845545 #31827]  INFO -- : Redirected to http://vps11.ecst.csuchico.edu/profiles
+I, [2013-12-02T21:12:31.845735 #31827]  INFO -- : Completed 302 Found in 215ms (ActiveRecord: 26.1ms)
+I, [2013-12-02T21:12:31.931187 #31827]  INFO -- : Started GET "/profiles" for 132.241.73.14 at 2013-12-02 21:12:31 -0800
+I, [2013-12-02T21:12:31.932478 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:12:31.940747 #31827]  INFO -- :   Rendered profiles/index.html.erb within layouts/application (1.4ms)
+I, [2013-12-02T21:12:31.941892 #31827]  INFO -- : Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 4.4ms)
+I, [2013-12-02T21:12:34.908568 #31827]  INFO -- : Started GET "/profiles/new" for 132.241.73.14 at 2013-12-02 21:12:34 -0800
+I, [2013-12-02T21:12:34.911430 #31827]  INFO -- : Processing by ProfilesController#new as HTML
+I, [2013-12-02T21:12:34.924047 #31827]  INFO -- :   Rendered profiles/_form.html.erb (7.4ms)
+I, [2013-12-02T21:12:34.924496 #31827]  INFO -- :   Rendered profiles/new.html.erb within layouts/application (8.1ms)
+I, [2013-12-02T21:12:34.926324 #31827]  INFO -- : Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+I, [2013-12-02T21:12:49.120419 #31827]  INFO -- : Started POST "/profiles" for 132.241.73.14 at 2013-12-02 21:12:49 -0800
+I, [2013-12-02T21:12:49.122668 #31827]  INFO -- : Processing by ProfilesController#create as HTML
+I, [2013-12-02T21:12:49.122824 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"4peNf03sFbrpMu65r1Wri9W3aLzdn0a2oyV8Zeyu1zY=", "profile"=>{"name"=>"jjj", "description"=>"text"}, "commit"=>"Create Profile"}
+I, [2013-12-02T21:12:49.133978 #31827]  INFO -- : Completed 500 Internal Server Error in 11ms
+F, [2013-12-02T21:12:49.138041 #31827] FATAL -- : 
+NoMethodError (undefined method `comment' for #<Profile:0x0000000577ecc8>):
+  app/controllers/profiles_controller.rb:31:in `block in create'
+  app/controllers/profiles_controller.rb:30:in `create'
+
+
+I, [2013-12-02T21:54:00.503278 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:54:00 -0800
+I, [2013-12-02T21:54:00.511935 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:54:00.519179 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.9ms)
+I, [2013-12-02T21:54:00.525377 #31827]  INFO -- : Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:54:04.032361 #31827]  INFO -- : Started GET "/profiles" for 132.241.246.117 at 2013-12-02 21:54:04 -0800
+I, [2013-12-02T21:54:04.034723 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:54:04.038012 #31827]  INFO -- : Completed 401 Unauthorized in 3ms
+I, [2013-12-02T21:54:04.052396 #31827]  INFO -- : Started GET "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:54:04 -0800
+I, [2013-12-02T21:54:04.054364 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:54:04.068076 #31827]  INFO -- :   Rendered devise/shared/_links.erb (1.0ms)
+I, [2013-12-02T21:54:04.068374 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+I, [2013-12-02T21:54:04.072024 #31827]  INFO -- : Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:54:05.553840 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:54:05 -0800
+I, [2013-12-02T21:54:05.556066 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:54:05.558877 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.9ms)
+I, [2013-12-02T21:54:05.562636 #31827]  INFO -- : Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:54:10.354128 #31827]  INFO -- : Started GET "/profiles" for 132.241.246.117 at 2013-12-02 21:54:10 -0800
+I, [2013-12-02T21:54:10.357170 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:54:10.360394 #31827]  INFO -- : Completed 401 Unauthorized in 3ms
+I, [2013-12-02T21:54:10.369450 #31827]  INFO -- : Started GET "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:54:10 -0800
+I, [2013-12-02T21:54:10.371171 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:54:10.381763 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.8ms)
+I, [2013-12-02T21:54:10.382073 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+I, [2013-12-02T21:54:10.385211 #31827]  INFO -- : Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:56:15.500490 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:56:15 -0800
+I, [2013-12-02T21:56:15.504937 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:56:15.509054 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.4ms)
+I, [2013-12-02T21:56:15.513724 #31827]  INFO -- : Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:57:55.225048 #31827]  INFO -- : Started GET "/query?utf8=%E2%9C%93&query=2+subs+and+amp&commit=Lookup" for 132.241.246.117 at 2013-12-02 21:57:55 -0800
+I, [2013-12-02T21:57:55.228473 #31827]  INFO -- : Processing by HomeController#query as HTML
+I, [2013-12-02T21:57:55.228648 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "query"=>"2 subs and amp", "commit"=>"Lookup"}
+I, [2013-12-02T21:57:55.238226 #31827]  INFO -- :   Rendered home/query.html.erb within layouts/application (1.1ms)
+I, [2013-12-02T21:57:55.243109 #31827]  INFO -- : Completed 200 OK in 14ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:01.698427 #31827]  INFO -- : Started GET "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:58:01 -0800
+I, [2013-12-02T21:58:01.702033 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:58:01.718649 #31827]  INFO -- :   Rendered devise/shared/_links.erb (1.2ms)
+I, [2013-12-02T21:58:01.718927 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (9.9ms)
+I, [2013-12-02T21:58:01.722879 #31827]  INFO -- : Completed 200 OK in 21ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:09.446889 #31827]  INFO -- : Started POST "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:58:09 -0800
+I, [2013-12-02T21:58:09.451430 #31827]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2013-12-02T21:58:09.451620 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"ad8004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:09.655460 #31827]  INFO -- : Completed 401 Unauthorized in 203ms
+I, [2013-12-02T21:58:09.659503 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:58:09.659681 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"ad8004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:09.864873 #31827]  INFO -- :   Rendered devise/shared/_links.erb (1.1ms)
+I, [2013-12-02T21:58:09.865180 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+I, [2013-12-02T21:58:09.867570 #31827]  INFO -- : Completed 200 OK in 208ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:14.179346 #31827]  INFO -- : Started POST "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:58:14 -0800
+I, [2013-12-02T21:58:14.182474 #31827]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2013-12-02T21:58:14.182640 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"ad8004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:14.377363 #31827]  INFO -- : Completed 401 Unauthorized in 195ms
+I, [2013-12-02T21:58:14.379045 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:58:14.379204 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"ad8004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:14.580362 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.8ms)
+I, [2013-12-02T21:58:14.580690 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (7.6ms)
+I, [2013-12-02T21:58:14.582649 #31827]  INFO -- : Completed 200 OK in 203ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:25.180420 #31827]  INFO -- : Started POST "/users/sign_in" for 132.241.246.117 at 2013-12-02 21:58:25 -0800
+I, [2013-12-02T21:58:25.182734 #31827]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2013-12-02T21:58:25.182917 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"123@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:25.188123 #31827]  INFO -- : Completed 401 Unauthorized in 5ms
+I, [2013-12-02T21:58:25.189643 #31827]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-02T21:58:25.189790 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"123@mail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+I, [2013-12-02T21:58:25.390057 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.9ms)
+I, [2013-12-02T21:58:25.390332 #31827]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (7.5ms)
+I, [2013-12-02T21:58:25.392506 #31827]  INFO -- : Completed 200 OK in 203ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:28.441791 #31827]  INFO -- : Started GET "/users/sign_up" for 132.241.246.117 at 2013-12-02 21:58:28 -0800
+I, [2013-12-02T21:58:28.444234 #31827]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-02T21:58:28.454640 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.7ms)
+I, [2013-12-02T21:58:28.454916 #31827]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (7.3ms)
+I, [2013-12-02T21:58:28.458817 #31827]  INFO -- : Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+I, [2013-12-02T21:58:43.894713 #31827]  INFO -- : Started POST "/users" for 132.241.246.117 at 2013-12-02 21:58:43 -0800
+I, [2013-12-02T21:58:43.897089 #31827]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-02T21:58:43.897267 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo=", "user"=>{"email"=>"test@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+E, [2013-12-02T21:58:44.097981 #31827] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+E, [2013-12-02T21:58:44.112245 #31827] ERROR -- : Binary data inserted for `string` type on column `last_sign_in_ip`
+E, [2013-12-02T21:58:44.112424 #31827] ERROR -- : Binary data inserted for `string` type on column `current_sign_in_ip`
+I, [2013-12-02T21:58:44.122639 #31827]  INFO -- : Redirected to http://vps11.ecst.csuchico.edu/profiles
+I, [2013-12-02T21:58:44.123074 #31827]  INFO -- : Completed 302 Found in 226ms (ActiveRecord: 19.1ms)
+I, [2013-12-02T21:58:44.136856 #31827]  INFO -- : Started GET "/profiles" for 132.241.246.117 at 2013-12-02 21:58:44 -0800
+I, [2013-12-02T21:58:44.138755 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:58:44.144059 #31827]  INFO -- :   Rendered profiles/index.html.erb within layouts/application (1.3ms)
+I, [2013-12-02T21:58:44.146320 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.6ms)
+I, [2013-12-02T21:58:51.942955 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:58:51 -0800
+I, [2013-12-02T21:58:51.945294 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:58:51.948520 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.1ms)
+I, [2013-12-02T21:58:51.952911 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+I, [2013-12-02T21:58:54.256966 #31827]  INFO -- : Started GET "/profiles" for 132.241.246.117 at 2013-12-02 21:58:54 -0800
+I, [2013-12-02T21:58:54.259263 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-02T21:58:54.264552 #31827]  INFO -- :   Rendered profiles/index.html.erb within layouts/application (1.3ms)
+I, [2013-12-02T21:58:54.266850 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.7ms)
+I, [2013-12-02T21:59:03.996631 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:59:03 -0800
+I, [2013-12-02T21:59:03.998699 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:59:04.001294 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (0.8ms)
+I, [2013-12-02T21:59:04.005530 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+I, [2013-12-02T21:59:16.021315 #31827]  INFO -- : Started DELETE "/users/sign_out" for 132.241.246.117 at 2013-12-02 21:59:16 -0800
+I, [2013-12-02T21:59:16.024661 #31827]  INFO -- : Processing by Devise::SessionsController#destroy as HTML
+I, [2013-12-02T21:59:16.024847 #31827]  INFO -- :   Parameters: {"authenticity_token"=>"lHA9+UhnUZcoTqsB2l6OxjqAr+6a+ZicjPYCqfweXSo="}
+I, [2013-12-02T21:59:16.041339 #31827]  INFO -- : Redirected to http://vps11.ecst.csuchico.edu/
+I, [2013-12-02T21:59:16.041700 #31827]  INFO -- : Completed 302 Found in 17ms (ActiveRecord: 0.8ms)
+I, [2013-12-02T21:59:16.050199 #31827]  INFO -- : Started GET "/" for 132.241.246.117 at 2013-12-02 21:59:16 -0800
+I, [2013-12-02T21:59:16.051598 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-02T21:59:16.147857 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (93.0ms)
+I, [2013-12-02T21:59:16.156140 #31827]  INFO -- : Completed 200 OK in 104ms (Views: 103.2ms | ActiveRecord: 0.0ms)
+I, [2013-12-03T01:16:09.022303 #31827]  INFO -- : Started GET "/" for 132.241.73.42 at 2013-12-03 01:16:09 -0800
+I, [2013-12-03T01:16:09.030889 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-03T01:16:09.037309 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (2.0ms)
+I, [2013-12-03T01:16:09.043760 #31827]  INFO -- : Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+I, [2013-12-03T01:16:15.232129 #31827]  INFO -- : Started GET "/users/sign_up" for 132.241.73.42 at 2013-12-03 01:16:15 -0800
+I, [2013-12-03T01:16:15.234968 #31827]  INFO -- : Processing by Devise::RegistrationsController#new as HTML
+I, [2013-12-03T01:16:15.248243 #31827]  INFO -- :   Rendered devise/shared/_links.erb (0.7ms)
+I, [2013-12-03T01:16:15.248503 #31827]  INFO -- :   Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+I, [2013-12-03T01:16:15.252081 #31827]  INFO -- : Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+I, [2013-12-03T01:16:26.497035 #31827]  INFO -- : Started POST "/users" for 132.241.73.42 at 2013-12-03 01:16:26 -0800
+I, [2013-12-03T01:16:26.500229 #31827]  INFO -- : Processing by Devise::RegistrationsController#create as HTML
+I, [2013-12-03T01:16:26.500415 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ML4OrsFyNn0pPqLtGydEdWyY1zLTSo/itvUd99RYF3E=", "user"=>{"email"=>"a@c.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+E, [2013-12-03T01:16:26.702048 #31827] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+E, [2013-12-03T01:16:26.715737 #31827] ERROR -- : Binary data inserted for `string` type on column `last_sign_in_ip`
+E, [2013-12-03T01:16:26.715857 #31827] ERROR -- : Binary data inserted for `string` type on column `current_sign_in_ip`
+I, [2013-12-03T01:16:26.726295 #31827]  INFO -- : Redirected to http://vps11.ecst.csuchico.edu/
+I, [2013-12-03T01:16:26.726692 #31827]  INFO -- : Completed 302 Found in 226ms (ActiveRecord: 19.4ms)
+I, [2013-12-03T01:16:26.774288 #31827]  INFO -- : Started GET "/" for 132.241.73.42 at 2013-12-03 01:16:26 -0800
+I, [2013-12-03T01:16:26.775909 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-03T01:16:26.778758 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.0ms)
+I, [2013-12-03T01:16:26.783327 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+I, [2013-12-03T01:16:32.419671 #31827]  INFO -- : Started GET "/profiles" for 132.241.73.42 at 2013-12-03 01:16:32 -0800
+I, [2013-12-03T01:16:32.421915 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-03T01:16:32.427472 #31827]  INFO -- :   Rendered profiles/index.html.erb within layouts/application (1.3ms)
+I, [2013-12-03T01:16:32.429512 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+I, [2013-12-03T01:16:35.831067 #31827]  INFO -- : Started GET "/profiles/new" for 132.241.73.42 at 2013-12-03 01:16:35 -0800
+I, [2013-12-03T01:16:35.833316 #31827]  INFO -- : Processing by ProfilesController#new as HTML
+I, [2013-12-03T01:16:35.845763 #31827]  INFO -- :   Rendered profiles/_form.html.erb (8.0ms)
+I, [2013-12-03T01:16:35.846268 #31827]  INFO -- :   Rendered profiles/new.html.erb within layouts/application (8.9ms)
+I, [2013-12-03T01:16:35.848118 #31827]  INFO -- : Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+I, [2013-12-03T01:16:57.675086 #31827]  INFO -- : Started POST "/profiles" for 132.241.73.42 at 2013-12-03 01:16:57 -0800
+I, [2013-12-03T01:16:57.677084 #31827]  INFO -- : Processing by ProfilesController#create as HTML
+I, [2013-12-03T01:16:57.677345 #31827]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"ML4OrsFyNn0pPqLtGydEdWyY1zLTSo/itvUd99RYF3E=", "profile"=>{"name"=>"yo", "description"=>"hi", "picture"=>#<ActionDispatch::Http::UploadedFile:0x000000057d4e98 @tempfile=#<Tempfile:/tmp/RackMultipart20131203-31827-1css6po>, @original_filename="bob.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"profile[picture]\"; filename=\"bob.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Profile"}
+I, [2013-12-03T01:16:57.695255 #31827]  INFO -- : Completed 500 Internal Server Error in 18ms
+F, [2013-12-03T01:16:57.699972 #31827] FATAL -- : 
+Errno::ENOENT (No such file or directory - identify):
+  app/controllers/profiles_controller.rb:28:in `create'
+
+
+I, [2013-12-03T01:17:05.297818 #31827]  INFO -- : Started GET "/profiles" for 132.241.73.42 at 2013-12-03 01:17:05 -0800
+I, [2013-12-03T01:17:05.300835 #31827]  INFO -- : Processing by ProfilesController#index as HTML
+I, [2013-12-03T01:17:05.308101 #31827]  INFO -- :   Rendered profiles/index.html.erb within layouts/application (1.5ms)
+I, [2013-12-03T01:17:05.310601 #31827]  INFO -- : Completed 200 OK in 9ms (Views: 4.4ms | ActiveRecord: 0.9ms)
+I, [2013-12-03T01:17:05.943877 #31827]  INFO -- : Started GET "/" for 132.241.73.42 at 2013-12-03 01:17:05 -0800
+I, [2013-12-03T01:17:05.946160 #31827]  INFO -- : Processing by HomeController#index as HTML
+I, [2013-12-03T01:17:05.949230 #31827]  INFO -- :   Rendered home/index.html.erb within layouts/application (1.0ms)
+I, [2013-12-03T01:17:05.953783 #31827]  INFO -- : Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.5ms)
+I, [2013-12-03T01:17:12.279923 #31827]  INFO -- : Started GET "/users/edit" for 132.241.73.42 at 2013-12-03 01:17:12 -0800
+I, [2013-12-03T01:17:12.283209 #31827]  INFO -- : Processing by Devise::RegistrationsController#edit as HTML
+I, [2013-12-03T01:17:12.303366 #31827]  INFO -- :   Rendered devise/registrations/edit.html.erb within layouts/application (14.1ms)
+I, [2013-12-03T01:17:12.306314 #31827]  INFO -- : Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.6ms)
+I, [2013-12-03T11:28:31.369436 #9364]  INFO -- : Started GET "/" for 132.241.73.13 at 2013-12-03 11:28:31 -0800
+I, [2013-12-03T11:28:31.404246 #9364]  INFO -- : Processing by IdeasController#index as HTML
+I, [2013-12-03T11:28:31.450366 #9364]  INFO -- :   Rendered ideas/index.html.erb within layouts/application (25.4ms)
+I, [2013-12-03T11:28:31.461874 #9364]  INFO -- : Completed 200 OK in 57ms (Views: 38.2ms | ActiveRecord: 1.0ms)
+I, [2013-12-03T11:28:39.200133 #9364]  INFO -- : Started GET "/ideas" for 132.241.73.13 at 2013-12-03 11:28:39 -0800
+I, [2013-12-03T11:28:39.204957 #9364]  INFO -- : Processing by IdeasController#index as HTML
+I, [2013-12-03T11:28:39.215864 #9364]  INFO -- :   Rendered ideas/index.html.erb within layouts/application (7.4ms)
+I, [2013-12-03T11:28:39.247735 #9364]  INFO -- : Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.4ms)
+I, [2013-12-03T11:28:40.497167 #9364]  INFO -- : Started GET "/ideas/new" for 132.241.73.13 at 2013-12-03 11:28:40 -0800
+I, [2013-12-03T11:28:40.500656 #9364]  INFO -- : Processing by IdeasController#new as HTML
+I, [2013-12-03T11:28:40.503878 #9364]  INFO -- : Completed 401 Unauthorized in 3ms
+I, [2013-12-03T11:28:40.578429 #9364]  INFO -- : Started GET "/users/sign_in" for 132.241.73.13 at 2013-12-03 11:28:40 -0800
+I, [2013-12-03T11:28:40.583125 #9364]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-03T11:28:40.787393 #9364]  INFO -- :   Rendered devise/shared/_links.erb (3.4ms)
+I, [2013-12-03T11:28:40.787710 #9364]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (25.4ms)
+I, [2013-12-03T11:28:40.791737 #9364]  INFO -- : Completed 200 OK in 208ms (Views: 61.6ms | ActiveRecord: 1.0ms)
+I, [2013-12-03T11:28:43.858498 #9364]  INFO -- : Started GET "/ideas" for 132.241.73.13 at 2013-12-03 11:28:43 -0800
+I, [2013-12-03T11:28:43.861125 #9364]  INFO -- : Processing by IdeasController#index as HTML
+I, [2013-12-03T11:28:43.868452 #9364]  INFO -- :   Rendered ideas/index.html.erb within layouts/application (4.9ms)
+I, [2013-12-03T11:28:43.872009 #9364]  INFO -- : Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+I, [2013-12-03T11:28:45.647606 #9364]  INFO -- : Started GET "/ideas/1" for 132.241.73.13 at 2013-12-03 11:28:45 -0800
+I, [2013-12-03T11:28:45.649647 #9364]  INFO -- : Processing by IdeasController#show as HTML
+I, [2013-12-03T11:28:45.649799 #9364]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-03T11:28:45.731698 #9364]  INFO -- :   Rendered comments/_form.html.erb (15.2ms)
+I, [2013-12-03T11:28:45.732833 #9364]  INFO -- :   Rendered ideas/show.html.erb within layouts/application (29.1ms)
+I, [2013-12-03T11:28:45.736971 #9364]  INFO -- : Completed 200 OK in 87ms (Views: 31.2ms | ActiveRecord: 5.0ms)
+I, [2013-12-03T11:28:52.258989 #9364]  INFO -- : Started GET "/" for 132.241.73.13 at 2013-12-03 11:28:52 -0800
+I, [2013-12-03T11:28:52.263253 #9364]  INFO -- : Processing by IdeasController#index as HTML
+I, [2013-12-03T11:28:52.273552 #9364]  INFO -- :   Rendered ideas/index.html.erb within layouts/application (6.6ms)
+I, [2013-12-03T11:28:52.277728 #9364]  INFO -- : Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.5ms)
+I, [2013-12-03T11:28:55.194944 #9364]  INFO -- : Started GET "/ideas/1" for 132.241.73.13 at 2013-12-03 11:28:55 -0800
+I, [2013-12-03T11:28:55.197151 #9364]  INFO -- : Processing by IdeasController#show as HTML
+I, [2013-12-03T11:28:55.197281 #9364]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-03T11:28:55.217704 #9364]  INFO -- :   Rendered comments/_form.html.erb (9.3ms)
+I, [2013-12-03T11:28:55.218842 #9364]  INFO -- :   Rendered ideas/show.html.erb within layouts/application (16.0ms)
+I, [2013-12-03T11:28:55.223052 #9364]  INFO -- : Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.6ms)
+I, [2013-12-03T11:30:36.244711 #9364]  INFO -- : Started GET "/ideas/1" for 132.241.73.13 at 2013-12-03 11:30:36 -0800
+I, [2013-12-03T11:30:36.248001 #9364]  INFO -- : Processing by IdeasController#show as HTML
+I, [2013-12-03T11:30:36.248157 #9364]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2013-12-03T11:30:36.277795 #9364]  INFO -- :   Rendered comments/_form.html.erb (12.3ms)
+I, [2013-12-03T11:30:36.279105 #9364]  INFO -- :   Rendered ideas/show.html.erb within layouts/application (23.9ms)
+I, [2013-12-03T11:30:36.284240 #9364]  INFO -- : Completed 200 OK in 36ms (Views: 30.1ms | ActiveRecord: 0.8ms)
+I, [2013-12-03T11:30:39.363592 #9364]  INFO -- : Started GET "/ideas/1/comments/new" for 132.241.73.13 at 2013-12-03 11:30:39 -0800
+I, [2013-12-03T11:30:39.368671 #9364]  INFO -- : Processing by CommentsController#new as HTML
+I, [2013-12-03T11:30:39.368804 #9364]  INFO -- :   Parameters: {"idea_id"=>"1"}
+I, [2013-12-03T11:30:39.373524 #9364]  INFO -- : Completed 401 Unauthorized in 4ms
+I, [2013-12-03T11:30:39.422177 #9364]  INFO -- : Started GET "/users/sign_in" for 132.241.73.13 at 2013-12-03 11:30:39 -0800
+I, [2013-12-03T11:30:39.425734 #9364]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-03T11:30:39.511780 #9364]  INFO -- :   Rendered devise/shared/_links.erb (1.0ms)
+I, [2013-12-03T11:30:39.512098 #9364]  INFO -- :   Rendered devise/sessions/new.html.erb within layouts/application (81.1ms)
+I, [2013-12-03T11:30:39.516043 #9364]  INFO -- : Completed 200 OK in 90ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+I, [2013-12-03T11:30:44.532680 #9364]  INFO -- : Started GET "/" for 132.241.73.13 at 2013-12-03 11:30:44 -0800
+I, [2013-12-03T11:30:44.534866 #9364]  INFO -- : Processing by IdeasController#index as HTML
+I, [2013-12-03T11:30:44.542250 #9364]  INFO -- :   Rendered ideas/index.html.erb within layouts/application (5.2ms)
+I, [2013-12-03T11:30:44.545891 #9364]  INFO -- : Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.5ms)

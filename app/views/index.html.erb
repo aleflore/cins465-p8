@@ -1,0 +1,10 @@
+<h1>Search Geeks and Girls</h1>
+<br>
+<p>
+<br>
+<%= form_tag("/query", method: "get") do  %>
+  <%= label_tag(:query, "Name: ") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<br>

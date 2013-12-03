@@ -1,11 +1,11 @@
 Gng::Application.routes.draw do
-  root 'home#index'
-  get 'query', to: 'home#query'
-  devise_for :users
-  resources :profiles do
-	resources :comments, :shallow => true
-  end
   
+ root "ideas#index"
+ get 'query', to: 'idea#query'
+  devise_for :users
+  resources :ideas do 
+    resources :comments, :shallow => true
+   end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

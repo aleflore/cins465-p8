@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Geeks N Girls</title>
+  <title>Geeks n Girls</title>
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,9 +11,9 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/">Geeks and Girls</a>
+      <a class="brand" href="/ideas">Geeks and Girls</a>
       <ul class="nav">
-        <li class="active"><a href="/profiles">All Profiles</a></li>
+		<li ><%= link_to 'New Picture', new_idea_path %></li>
       </ul>
 	  <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -26,7 +26,7 @@
 <% end %>
     </div>
   </div>
-</div>
+</div
 <div class="container">
 <% if notice %>
   <p class="alert alert-notice"><%= notice %></p>
@@ -34,11 +34,11 @@
 <% if alert %>
   <p class="alert alert-error"><%= alert %></p>
 <% end %>
-<%= yield %>
+  <%= yield %>
 </div>
 <footer>
   <div class="container">
-    Geeks N Girls 2013
+    Adrian Leflore
   </div>
 </footer>
 </body>

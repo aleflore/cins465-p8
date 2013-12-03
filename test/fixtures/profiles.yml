@@ -4,10 +4,10 @@ one:
   name: MyString
   description: MyText
   picture: MyString
-  profile_id: MyString
+  profile_id: 1
 
 two:
   name: MyString
   description: MyText
   picture: MyString
-  profile_id: MyString
+  profile_id: 1
